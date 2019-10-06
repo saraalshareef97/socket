@@ -67,10 +67,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            // Column(
-            //   children: list.map((data) => Text(data)).toList(),
-            // )
-
+            Column(
+              children: list.map((data) => Text(data)).toList(),
+            ),
             StreamBuilder(
               stream: channel.stream,
               builder: (BuildContext context, AsyncSnapshot snapshot) {
